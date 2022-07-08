@@ -2,7 +2,7 @@
 
 1. Schema Design
 
-       ![](/home/gao/.config/marktext/images/2022-07-08-14-46-57-Untitled%20Diagram.drawio.png)
+       ![image](https://github.com/StepY1aoZz/tsdb-demo/blob/main/Untitled%20Diagram.drawio.png)
 
 对于智能电表这类设备，建立一张超级表，规定其数据采集量为电压，电流以及对应的相位。使用其所在的位置作为静态量来对其进行标识
 
