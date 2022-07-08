@@ -33,7 +33,10 @@ CREATE TABLE d1001 USING meters TAGS ("Sichuan.Chengdu");
 
 ```sql
 INSERT INTO d1001 VALUES (1538548684000, 10.2, 220, 0.23) (1538548696650, 10.3, 218, 0.25);
+INSERT INTO d1001 VALUES ('2022-07-01 14:38:16.600', 10.3, 219, 0.31);
 ```
+
+    
 
 5. Query
 
@@ -42,3 +45,15 @@ select * from d1001 where ts>now - 4w order by ts desc;
 ```
 
 查询d1001电表前四周的记录
+
+输出结果：
+
+```
+           ts            |       current        |   voltage   |        phase         |
+======================================================================================
+ 2022-07-01 14:38:16.600 |             10.30000 |         219 |              0.31000 |
+Query OK, 1 row(s) in set (0.001803s)
+
+```
+
+
